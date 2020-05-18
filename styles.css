@@ -49,6 +49,11 @@ button {
 
 }
 
+/* standard styles */
+.no-decoration {
+	text-decoration: none;
+}
+
 /* nav-bar styling */
 
 .black-nav,
@@ -102,4 +107,32 @@ button {
 .fa-search {
   color: rgb(196, 196, 196);
   transform: rotateY(180grad) scale(1.3);
+}
+
+.yellow-nav {
+	font-size: .9rem;
+	padding: .5% 0 .3% 1%;
+	background-color: #FFDD33;
+}
+
+.yellow-nav a {
+	color: black;
+}
+
+/* cover */
+.cover {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: .6rem;
+	padding: .1rem .5rem 0;
+}
+
+.cover-story {
+	background-image: url("assets/musk.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	grid-row: 1 / -1;
+	height: 23vw;
 }
