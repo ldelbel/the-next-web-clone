@@ -121,18 +121,72 @@ button {
 
 /* cover */
 .cover {
-	display: grid;
+  display: grid;
 	grid-template-columns: 2fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	gap: .6rem;
-	padding: .1rem .5rem 0;
+  padding: .1rem .5rem 0;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cover-story,
+.top-side-cover,
+.bottom-side-cover {
+  background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .cover-story {
 	background-image: url("assets/musk.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	grid-row: 1 / -1;
-	height: 23vw;
+  grid-row: 1 / -1;
+  height: 23vw;
+  position: relative;
+}
+
+.top-side-cover {
+  background-image: url("assets/top-side-img.jpg");
+  position: relative;
+}
+
+.bottom-side-cover {
+  background-image: url("assets/bottom-side.jpg");
+  position: relative;
+}
+
+.cover-trigger {
+  position: absolute;
+  left: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.cover-content {
+  position: absolute;
+  bottom: 10%;
+}
+
+.cover-content h5 {
+  font-family: 'shentox-5';
+}
+
+.cover-content h2 {
+  font-size: 2.5em;
+  font-weight: 900;
+}
+
+.top-side-cover h2 {
+  position: absolute;
+  bottom: 10%;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.bottom-side-cover h2 {
+  position: absolute;
+  bottom: 10%;
+  font-size: 1.5em;
+  font-weight: 900;
 }
