@@ -128,6 +128,7 @@ button {
   padding: .1rem .5rem 0;
   color: white;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  filter: brightness(1.5)
 }
 
 .cover-story,
@@ -141,13 +142,21 @@ button {
 .cover-story {
 	background-image: url("assets/musk.jpg");
   grid-row: 1 / -1;
-  height: 23vw;
+  height: 24rem;
   position: relative;
 }
 
 .top-side-cover {
   background-image: url("assets/top-side-img.jpg");
   position: relative;
+}
+
+.bottom-side-cover div,
+.top-side-cover div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,1) 94%);
 }
 
 .bottom-side-cover {
@@ -166,6 +175,8 @@ button {
 .cover-content {
   position: absolute;
   bottom: 10%;
+  padding-left: 1rem;
+  padding-right: 3rem;
 }
 
 .cover-content h5 {
@@ -173,20 +184,47 @@ button {
 }
 
 .cover-content h2 {
-  font-size: 2.5em;
-  font-weight: 900;
+  font-size: 2.9em;
+  font-weight: 1000;
+  line-height: 1.3em;
 }
 
+.bottom-side-cover h2,
 .top-side-cover h2 {
   position: absolute;
   bottom: 10%;
-  font-size: 1.5em;
-  font-weight: 900;
+  font-size: 1.7em;
+  line-height: 2rem;
+  font-weight: 1000;
+  padding-left: 1rem;
+  padding-right: 4rem;
 }
 
-.bottom-side-cover h2 {
+.cover-gradient {
+  background: linear-gradient(160deg,rgba(247, 72, 59, 0.45) 35%, rgba(9,9,121,0) 60%, rgba(0,0,0,0.7903536414565826) 80%);;
+  width: 100%;
+  height: 100%;
+  filter: brightness(1.5) contrast(1.6);
+}
+
+.cover-gradient2 {
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 98%);
+  width: 100%;
+  height: 100%;
   position: absolute;
-  bottom: 10%;
-  font-size: 1.5em;
-  font-weight: 900;
+  left: 0;
+  top: 0;
+}
+
+.cover-logo {
+  background-image: url("assets/tnw-logo.png");
+  background-size: 33vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 40%; 
+  position: absolute;
+  left: 2%; 
+  top: 2%;
+  filter: brightness(100);
 }
