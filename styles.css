@@ -239,7 +239,7 @@ button {
 .news h2 {
 	font-size: 1.5rem;
 	margin-bottom: 1.5rem;
-	color: orangered;
+	color: rgb(255, 68, 34);
 }
 
 .grid-news {
@@ -263,3 +263,116 @@ button {
 	font-size: .8rem;
 	color: rgb(189, 189, 189);
 }
+
+.funding {
+  padding: 6rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 1000;
+}
+
+.funding h2 {
+  font-size: 1.9rem;
+  line-height: 4rem;
+  color: rgb(255, 68, 34);
+}
+
+.funding span {
+  line-height: 4rem;
+}
+
+.funding-title {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(255, 68, 34);
+}
+
+.funding-title a {
+  color: rgb(255, 68, 34);
+  font-weight: 400;
+  text-decoration: none;
+  padding: 0 0.5rem;
+}
+
+.funding-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 1rem;
+  gap: 1.5rem;
+}
+
+.funding-grid-item {
+  position: relative;
+}
+
+.funding-grid-item img {
+  position: absolute;
+  left: 0.7rem;
+  top: 0.7rem;
+  width: 3.8rem;
+  height: 3.8rem;
+}
+
+.funding-grid-item div:nth-child(2) {
+  height: 2rem;
+  line-height: 2rem;
+  padding-left: 5.4rem;
+  background-color: rgb(255, 68, 34);
+  color: white;
+}
+
+.money {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.7rem 1rem 0.7rem 5.4rem;
+  background-color: rgb(255,235,231);
+}
+
+.money span {
+  line-height: 1.3rem;
+}
+
+.money span:nth-child(2) {
+  font-size: 0.7rem;
+}
+
+.funding-grid-item div:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0.5rem;
+  background-color: rgb(255, 250, 248);
+}
+
+.funding-grid-item div:nth-child(4) span {
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+  color: rgb(100,100,100);
+  font-weight: 400;
+  margin-top: 0.3rem;
+}
+
+.funding-grid-item div:nth-child(4) span i {
+  margin: 0 0.5rem;
+  color: rgb(25,25,25);
+  transform: scale(1.2);
+}
+
+.funding-grid-item div:nth-child(5) {
+  font-size: 0.8rem;
+  padding: 1rem;
+  border-top: 0.02rem solid rgb(255, 68, 34,0.9);
+  background-color: rgb(255, 250, 248);
+  color: rgb(61, 61, 61);
+  font-weight: 400;
+}
+
+.funding-grid-item div:nth-child(5) p {
+  line-height: 1.5rem;
+}
+
+
+.funding-grid-item div:nth-child(5) p span {
+  line-height: 1rem;
+  color: #888;
+}
+
