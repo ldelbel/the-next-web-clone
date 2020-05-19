@@ -142,7 +142,7 @@ button {
 .cover-story {
 	background-image: url("assets/musk.jpg");
   grid-row: 1 / -1;
-  height: 24rem;
+  height: 34rem;
   position: relative;
 }
 
@@ -227,4 +227,39 @@ button {
   left: 2%; 
   top: 2%;
   filter: brightness(100);
+}
+
+/* grid */
+.news {
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	padding: 2rem;
+}
+
+.news h2 {
+	font-size: 1.5rem;
+	margin-bottom: 1.5rem;
+	color: orangered;
+}
+
+.grid-news {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 1.5rem;
+	max-width: 75rem;
+}
+
+.grid-news div img {
+	width: 100%;
+}
+
+.grid-news div h3 {
+	font-weight: 900;
+	padding: .4rem 0;
+}
+
+.grid-news div span a {
+	font-size: .8rem;
+	color: rgb(189, 189, 189);
 }
