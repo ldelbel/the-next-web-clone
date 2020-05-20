@@ -170,6 +170,7 @@ button {
   padding: 0.6rem 1.5rem 0.5rem 1.3rem;
   color: rgb(139, 138, 138);
   background-color: #111;
+  font-family: 'Lato', sans-serif;
 }
 
 .left-black {
@@ -178,7 +179,7 @@ button {
 
 .left-black span,
 .right-black span {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .right-black {
@@ -190,7 +191,7 @@ button {
 }
 
 .white-nav {
-  padding: 1.1rem 1rem;
+  padding: 1rem 1rem 0.8rem 1rem;
 }
 
 .left-white {
@@ -199,9 +200,10 @@ button {
 
 .left-white span {
   text-transform: uppercase;
-  font-size: 0.85rem;
-  font-family: "shentox-5", sans-serif;
-  color: rgb(168, 168, 168);
+  font-size: 1rem;
+  font-family: "Rajdhani";
+  color: rgb(170, 170, 170);
+  font-weight: 600;
 }
 
 .fa-search {
@@ -341,6 +343,12 @@ button {
   left: 2%;
   top: 2%;
   filter: brightness(100);
+}
+
+.cover-date {
+  position: absolute;
+  right: 3%;
+  top: 3%;
 }
 
 /* grid */
@@ -656,8 +664,8 @@ button {
 }
 
 .deals-img-div {
-  width: 18rem;
-  height: 14rem;
+  /* width: 18rem;
+  height: 14rem; */
   background: url("assets/deals-img-1.jpg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -714,7 +722,7 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 2.5rem;
+  padding: 2.5rem 0 2rem;
 }
 
 .footer-icons {
@@ -770,9 +778,10 @@ footer {
 .footer-links a {
   font-family: 'Rajdhani'; 
   text-decoration: none;
-  color: rgb(219, 219, 219);
+  color: rgb(163, 163, 163);
   font-size: 0.92rem;
   margin: 0 0.2rem;
+  font-weight: 600;
 }
 
 .footer-copyright {
@@ -793,13 +802,17 @@ footer {
   padding-left: 3rem;
 }
 
+.footer-copyright p {
+  color: #fc1717;
+}
+
 .tnwicon {
   filter: invert(100);
-  transform: scale(0.6);
+  transform: scale(0.55);
   transform-origin: 80%;
 }
 
 .stackpathicon {
-  transform: scale(0.5);
-  transform-origin: 10%;
+  transform: scale(0.38);
+  transform-origin: 5%;
 }
