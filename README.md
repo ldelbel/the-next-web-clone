@@ -5,7 +5,7 @@
 > We learned more about the use of Media Queries.
 > We deepened our understanding of the viewport meta attribute and how it affects the content of a webpage.
 
-![screenshot](./screenshot.png)
+![screenshot](./assets/screenshot.png)
 
 This project covers the following HTML and CSS3 concepts:
 
