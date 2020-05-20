@@ -159,7 +159,13 @@ main {
   text-decoration: none;
 }
 
-/* nav-bar styling */
+/* ------------------------------- NAVBAR SECTION ---------------------------------- */
+
+nav {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
 
 .logo-gif {
   height: 4.7rem;
@@ -214,7 +220,10 @@ main {
 }
 
 .white-nav {
-  padding: 1rem 1rem 0.8rem 1rem;
+  height: 2.9rem;
+  background-color: white;
+  line-height: 2.7rem;
+  padding-left: 1.5rem;
 }
 
 .left-white {
@@ -227,6 +236,13 @@ main {
   font-family: "Rajdhani";
   color: rgb(170, 170, 170);
   font-weight: 600;
+  padding-top: 0.2rem; /* center */
+}
+
+.right-white {
+  width: 3rem;
+  text-align: center; 
+  border-left: 0.02rem solid rgb(235, 235, 235);
 }
 
 .fa-search {
@@ -235,8 +251,9 @@ main {
 }
 
 .yellow-nav {
-  font-size: 0.9rem;
-  padding: 0.5% 0 0.3% 1%;
+  font-family: 'Lato',sans-serif;
+  font-size: 0.84rem;
+  padding: 0.7% 0 0.7% 1%;
   background-color: #ffdd33;
 }
 
@@ -244,7 +261,8 @@ main {
   color: black;
 }
 
-/* cover */
+/* ---------------------------------- COVER SECTION ------------------------------------------- */
+
 .cover {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -266,7 +284,7 @@ main {
 }
 
 .cover-story {
-  background-image: url("assets/musk.jpg");
+  background-image: url("assets/main-cover.png");
   grid-row: 1 / 3;
   height: 75vh;
   position: relative;
@@ -290,7 +308,7 @@ main {
 }
 
 .bottom-side-cover {
-  background-image: url("assets/bottom-side.jpg");
+  background-image: url("assets/bottom-side.png");
   position: relative;
 }
 
@@ -321,8 +339,9 @@ main {
 
 .cover-content h2 {
   font-size: 2.9rem;
-  font-weight: 900;
-  line-height: 3rem;
+  font-weight: 800;
+  line-height: 3.5rem;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .bottom-side-cover h2,
@@ -331,16 +350,16 @@ main {
   bottom: 10%;
   font-size: 1.7em;
   line-height: 2rem;
-  font-weight: 900;
+  font-weight: 700;
   padding-left: 1rem;
   padding-right: 4rem;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .cover-gradient {
   background: linear-gradient(
     160deg,
-    rgba(255, 45, 17, 0.7) 28%,
-    rgba(9, 9, 121, 0) 60%,
+    rgba(255, 41, 12, 0.5) 10%,
     rgba(0, 0, 0, 0.7903536414565826) 80%
   );
   width: 100%;
@@ -380,12 +399,13 @@ main {
   top: 3%;
 }
 
-/* news grid */
+/* ------------------------------------- NEWS SECTION ------------------------------------- */
+
 .news {
   font-family: "Lato", sans-serif;
   font-weight: 900;
   margin: 0 auto;
-  padding: 8rem 1rem 4rem;
+  padding: 5rem 1rem 2rem;
 }
 
 .news h2 {
@@ -414,10 +434,10 @@ main {
   color: rgb(189, 189, 189);
 }
 
-/* funding row */
+/* ------------------------ FUNDING SECTION ----------------------------- */
 
 .funding {
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
   font-family: "Lato", sans-serif;
   font-weight: 900;
 }
@@ -485,7 +505,9 @@ main {
 }
 
 .money span:nth-child(2) {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
+  color: #666;
+  font-weight: 400;
 }
 
 .funding-grid-item div:nth-child(4) {
@@ -527,7 +549,7 @@ main {
   color: #888;
 }
 
-/* misc row */
+/* ------------------------------ MISC SECTION --------------------------------  */
 
 .misc {
   display: grid;
@@ -542,10 +564,11 @@ main {
 }
 
 .misc-item h2 {
-  font-size: 1.9rem;
-  font-weight: 600;
-  color: rgb(255, 68, 34, 0.9);
+  font-weight: 900;
   margin-bottom: 1rem;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  color: rgb(255, 68, 34);
 }
 
 .misc-gradient {
@@ -560,11 +583,42 @@ main {
   );
 }
 
+.misc1 {
+  background: url("assets/misc1.jpg");
+}
+
+.misc2 {
+  background: url("assets/misc2.png");
+}
+
+.misc3 {
+  background: url("assets/misc3.jpg");
+}
+
+.misc4 {
+  background: url("assets/misc4.png");
+}
+
+.misc5 {
+  background: url("assets/misc5.png");
+}
+
+.misc6 {
+  background: url("assets/misc6.png");
+}
+
+.misc7 {
+  background: url("assets/misc7.jpg");
+}
+
+.misc8 {
+  background: url("assets/misc8.jpg");
+}
+
 .img-box {
   position: relative;
   height: 18rem;
   color: rgb(252, 252, 252);
-  background: url("assets/misc1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -688,13 +742,45 @@ main {
   line-height: 2rem;
 }
 
+.deal1 {
+  background: url("assets/deals-img-1.jpg");
+}
+
+.deal2 {
+  background: url("assets/deals-img-2.jpg");
+}
+
+.deal3 {
+  background: url("assets/deals-img-3.jpg");
+}
+
+.deal4 {
+  background: url("assets/deals-img-4.jpg");
+}
+
+.deal5 {
+  background: url("assets/deals-img-5.jpg");
+}
+
+.deal6 {
+  background: url("assets/deals-img-6.jpg");
+}
+
+.deal7 {
+  background: url("assets/deals-img-7.jpg");
+}
+
+.deal8 {
+  background: url("assets/deals-img-8.jpg");
+}
+
 .deals-img-div {
   width: 17rem;
   height: 13rem;
-  background: url("assets/deals-img-1.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
+
 
 .deals-title {
   margin: 0.6rem 0;
@@ -761,9 +847,14 @@ footer {
   height: 2.5rem;
   background-color: #313131;
   border-radius: 50%;
+  border: 2px solid #313131;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer-icons a div:hover {
+  background-color: transparent;
 }
 
 .footer-icons a div i {
@@ -842,7 +933,9 @@ footer {
   transform-origin: 5%;
 }
 
-@media screen and (min-width: 1600px) {
+/* ---------------------------------- MEDIA QUERIES ------------------------------------- */
+
+@media only screen and (min-width: 1600px) {
   .cover-story {
     height: 32rem;
   }
@@ -853,14 +946,18 @@ footer {
   }
 }
 
-@media screen and (max-width: 1390px) {
+@media only screen and (max-width: 1390px) {
   .cover-logo {
     width: 33.5vw;
     background-size: 33.5vw;
   }
+
+  .cover {
+    filter: brightness(1);
+  }
 }
 
-@media screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   .deals-img-div {
     width: 22.6vw;
     height: 17vw;
@@ -875,7 +972,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .cover-logo,
   .cover-date,
   .cover-gradient {
@@ -922,9 +1019,9 @@ footer {
     background-repeat: no-repeat;
   }
 
-.funding-title {
-  flex-direction: column;
-}
+  .funding-title {
+    flex-direction: column;
+  }
 
   .funding-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -935,7 +1032,20 @@ footer {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+  .black-nav {
+    display: none;
+  }
+
+  .logo-gif {
+    height: 2.8rem;
+    transition: all 0.4s;
+  }
+
+  .left-white {
+    display: none;
+  }
+    
   .cover {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -971,9 +1081,9 @@ footer {
     width: 5rem;
     height: 5rem;
     overflow: hidden;
-    position: relative;
     float: left;
     margin-right: .8rem;
+    position: relative;
   }
 
   .grid-news div img {
