@@ -654,6 +654,7 @@ main {
 .deals {
   padding: 0 1rem;
   font-family: "Lato", sans-serif;
+  color: #111;
 }
 
 .deals-grid {
@@ -960,12 +961,12 @@ footer {
     font-size: 1.2rem;
     line-height: 1.5rem;
   }
-  
+
   .grid-news {
     grid-template-columns: 1fr;
     gap: 2vw;
   }
-  
+
   .news-img-div {
     width: 5rem;
     height: 5rem;
@@ -1013,5 +1014,37 @@ footer {
     left: 0.8rem;
     font-size: 0.8rem;
     color: rgb(156, 156, 156);
+  }
+  
+  .deals-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .deals-img-div {
+    width: 5rem;
+    height: 5rem;
+    background-size: cover;
+    background-position: 50%;
+    float: left;
+  }
+
+  .deals-grid-item {
+    width: 100%;
+    height: 5.5rem;
+  }
+
+  .deals-title {
+    font-size: 0.9rem;  
+  }
+
+  .deals-title,
+  .deals-grid-item div:nth-child(5) {
+    margin-left: 6rem;
+  }
+
+  .yellow-flag,
+  .promo {
+    display: none;
   }
 }
