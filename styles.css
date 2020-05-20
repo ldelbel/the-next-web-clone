@@ -182,7 +182,7 @@ nav {
 }
 
 .logo-gif img {
-  filter: invert();
+  filter: invert(1);
 }
 
 .black-nav,
@@ -211,6 +211,12 @@ nav {
   font-size: 0.8rem;
 }
 
+.left-black span:hover,
+.right-black span:hover {
+  cursor: pointer;
+  color: white;
+}
+
 .right-black {
   width: 12.5rem;
 }
@@ -237,6 +243,11 @@ nav {
   color: rgb(170, 170, 170);
   font-weight: 600;
   padding-top: 0.2rem; /* center */
+}
+
+.left-white span:hover {
+  cursor: pointer;
+  color: black;
 }
 
 .right-white {
@@ -338,7 +349,7 @@ nav {
 }
 
 .cover-trigger:hover {
-  background-color: rgba(255, 255, 255, 0.015);
+  background-color: rgba(255, 255, 255, 0.03);
 }
 
 .cover-content {
@@ -1020,6 +1031,7 @@ footer {
 
   .cover-content h2 {
     font-size: 2.4rem;
+    line-height: 2.5rem;
   }
 
   .bottom-side-cover h2,
@@ -1151,11 +1163,11 @@ footer {
     height: 32rem;
   }
   
-  ..img-box p:nth-child(2) {
+  .img-box p:nth-child(2) {
     top: 12rem;
     left: 0.8rem;
     font-size: 0.7rem;
-    font-weight: 200;
+    font-weight: 400;
   }
   
   .img-box p:nth-child(3) {
