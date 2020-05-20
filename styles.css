@@ -139,6 +139,11 @@ button {
   background-color: transparent;
 }
 
+main {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
 @font-face {
   font-family: 'Rajdhani';
   src:url('fonts/Rajdhani.ttf.woff') format('woff'),
@@ -355,9 +360,8 @@ button {
 .news {
   font-family: "Lato", sans-serif;
   font-weight: 900;
-  max-width: 75rem;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 8rem 1rem 4rem;
 }
 
 .news h2 {
@@ -390,19 +394,19 @@ button {
 /* funding row */
 
 .funding {
-  padding: 6rem;
+  padding: 4rem 1rem;
   font-family: "Lato", sans-serif;
   font-weight: 900;
 }
 
 .funding h2 {
-  font-size: 1.9rem;
-  line-height: 4rem;
+  font-size: 1.7rem;
+  line-height: 2rem;
   color: rgb(255, 68, 34);
 }
 
 .funding span {
-  line-height: 4rem;
+  line-height: 2rem;
 }
 
 .funding-title {
@@ -507,12 +511,12 @@ button {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   font-family: "Lato", sans-serif;
-  margin: 0 6rem;
+  padding: 4rem 0 3rem;
 }
 
 .misc-item {
-  padding-left: 1rem;
-  margin-bottom: 3rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .misc-item h2 {
@@ -537,7 +541,7 @@ button {
 .img-box {
   position: relative;
   height: 18rem;
-  color: rgb(238, 238, 238);
+  color: rgb(252, 252, 252);
   background: url("assets/misc1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -631,7 +635,7 @@ button {
 /* ---------------------------- DEALS SECTION ---------------------------- */
 
 .deals {
-  padding: 0 4.5rem;
+  padding: 0 1rem;
   font-family: "Lato", sans-serif;
 }
 
@@ -644,30 +648,31 @@ button {
 
 .deals-grid-item {
   position: relative;
+  width: 17rem;
+  padding-bottom: 1rem;
 }
 
 .deals-top {
   color: rgb(255, 68, 34);
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1.5rem;
 }
 
 .deals-top h2 {
   font-size: 1.9rem;
-  line-height: 4rem;
+  line-height: 2rem;
   font-weight: 900;
 }
 
 .deals-top span {
   font-size: 1.2rem;
-  line-height: 4rem;
+  line-height: 2rem;
 }
 
 .deals-img-div {
-  width: 22vw;
-  height: 18vw;
-  /* width: 18rem;
-  height: 14rem; */
+  width: 17rem;
+  height: 13rem;
   background: url("assets/deals-img-1.jpg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -817,4 +822,18 @@ footer {
 .stackpathicon {
   transform: scale(0.38);
   transform-origin: 5%;
+}
+
+@media screen and (min-width: 1600px) {
+  .cover-story {
+    height: 32rem;
+  }
+
+  .cover-logo {
+    background-size: 25vw;
+    width: 40%;
+    height: 28%;
+    left: 1%;
+    top: 0;
+  }
 }
