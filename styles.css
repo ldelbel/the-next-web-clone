@@ -664,6 +664,8 @@ button {
 }
 
 .deals-img-div {
+  width: 22vw;
+  height: 18vw;
   /* width: 18rem;
   height: 14rem; */
   background: url("assets/deals-img-1.jpg");
