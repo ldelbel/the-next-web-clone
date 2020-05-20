@@ -339,14 +339,14 @@ main {
 
 .cover-logo {
   background-image: url("assets/tnw-logo.png");
-  background-size: 33vw;
+  background-size: 29rem;
   background-position: center;
   background-repeat: no-repeat;
-  width: 50%;
-  height: 40%;
+  width: 29rem;
+  height: 7rem;
   position: absolute;
-  left: 2%;
-  top: 2%;
+  left: 1.4em;
+  top: 1.4rem;
   filter: brightness(100);
 }
 
@@ -831,9 +831,13 @@ footer {
 
   .cover-logo {
     background-size: 25vw;
-    width: 40%;
-    height: 28%;
-    left: 1%;
-    top: 0;
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width:1390px) {
+  .cover-logo {
+    width: 33.5vw;
+    background-size: 33.5vw;
   }
 }
