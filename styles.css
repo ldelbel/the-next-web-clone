@@ -380,7 +380,7 @@ main {
   top: 3%;
 }
 
-/* grid */
+/* news grid */
 .news {
   font-family: "Lato", sans-serif;
   font-weight: 900;
@@ -573,11 +573,6 @@ main {
 .img-box img,
 .img-box p {
   position: absolute;
-}
-
-.img-box img {
-  width: auto;
-  height: 18rem;
 }
 
 .img-box p:nth-child(2) {
@@ -924,5 +919,99 @@ footer {
     background: url("assets/deals-img-1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+.funding-title {
+  flex-direction: column;
+}
+
+  .funding-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .vanish {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cover {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0.2rem;
+  }
+
+  .cover-story {
+    grid-row: 1 / 2;
+    height: 30vh;
+  }
+
+  .cover-content h5 {
+    display: none;
+  }
+  
+  .cover-content h2 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  
+  .bottom-side-cover h2,
+  .top-side-cover h2 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  
+  .grid-news {
+    grid-template-columns: 1fr;
+    gap: 2vw;
+  }
+  
+  .news-img-div {
+    width: 5rem;
+    height: 5rem;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    margin-right: .8rem;
+  }
+
+  .grid-news div img {
+    width: 10rem;
+    position: absolute;
+    left: -55%;
+  }
+  
+  .grid-news div h3 {
+    font-size: .9rem;
+  }
+
+  .funding-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .img-box {
+    height: 32rem;
+  }
+  
+  ..img-box p:nth-child(2) {
+    top: 12rem;
+    left: 0.8rem;
+    font-size: 0.7rem;
+    font-weight: 200;
+  }
+  
+  .img-box p:nth-child(3) {
+    top: 13rem;
+    left: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-right: 1rem;
+  }
+  
+  .img-box p:last-child {
+    top: 16rem;
+    left: 0.8rem;
+    font-size: 0.8rem;
+    color: rgb(156, 156, 156);
   }
 }
