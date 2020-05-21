@@ -5,7 +5,7 @@
 > We learned more about the use of Media Queries.
 > We deepened our understanding of the viewport meta attribute and how it affects the content of a webpage.
 
-![screenshot](./screenshot.png)
+![screenshot](./assets/screenshot.png)
 
 This project covers the following HTML and CSS3 concepts:
 
@@ -22,7 +22,7 @@ This project covers the following HTML and CSS3 concepts:
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://rawcdn.githack.com/ldelbel/the-next-web-clone/1e675bf2cf89b374b19522f478a736cb2b2e1ee7/index.html)
 
 ## Getting Started
 
