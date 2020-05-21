@@ -84,7 +84,6 @@ video {
   border: 0;
   box-sizing: border-box;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -173,10 +172,10 @@ nav {
   width: 6.5rem;
   background:
     linear-gradient(
-    141deg,
-    rgb(221, 0, 111) 0%,
-    rgba(255, 100, 20, 1) 100%
-  );
+      141deg,
+      rgb(221, 0, 111) 0%,
+      rgba(255, 100, 20, 1) 100%
+    );
   float: left;
   justify-content: center;
   align-items: center;
@@ -202,8 +201,8 @@ nav {
   color: rgb(139, 138, 138);
   background-color: #111;
   font-family:
-  "Lato",
-  sans-serif;
+    "Lato",
+    sans-serif;
 }
 
 .left-black {
@@ -218,7 +217,7 @@ nav {
 .left-white span {
   text-transform: uppercase;
   font-size: 1rem;
-  font-family: "Rajdhani";
+  font-family: "Rajdhani", sans-serif;
   color: rgb(170, 170, 170);
   font-weight: 600;
   padding-top: 0.2rem; /* center */
@@ -267,8 +266,8 @@ nav {
 
 .yellow-nav {
   font-family:
-  "Lato",
-  sans-serif;
+    "Lato",
+    sans-serif;
   font-size: 0.84rem;
   padding: 0.7% 0 0.7% 1%;
   background-color: #fd3;
@@ -288,13 +287,13 @@ nav {
   padding: 0.1rem 0.5rem 0;
   color: white;
   font-family:
-  "Lucida Sans",
-  "Lucida Sans Regular",
-  "Lucida Grande",
-  "Lucida Sans Unicode",
-  Geneva,
-  Verdana,
-  sans-serif;
+    "Lucida Sans",
+    "Lucida Sans Regular",
+    "Lucida Grande",
+    "Lucida Sans Unicode",
+    Geneva,
+    Verdana,
+    sans-serif;
   filter: brightness(1.8);
 }
 
@@ -324,10 +323,11 @@ nav {
   width: 100%;
   height: 100%;
   background:
-    linear-gradient(180deg,
-    rgba(0, 0, 0, 0.7) 0%,
-    rgba(0, 0, 0, 1) 94%
-  );
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 1) 94%
+    );
 }
 
 .bottom-side-cover {
@@ -357,7 +357,7 @@ nav {
 }
 
 .cover-content h5 {
-  font-family: "shentox-5";
+  font-family: "shentox-5", sans-serif;
 }
 
 .cover-content h2 {
@@ -365,8 +365,8 @@ nav {
   font-weight: 800;
   line-height: 3.5rem;
   font-family:
-  "Open Sans",
-  sans-serif;
+    "Open Sans",
+    sans-serif;
 }
 
 .bottom-side-cover h2,
@@ -379,17 +379,17 @@ nav {
   padding-left: 1rem;
   padding-right: 4rem;
   font-family:
-  "Open Sans",
-  sans-serif;
+    "Open Sans",
+    sans-serif;
 }
 
 .cover-gradient {
   background:
     linear-gradient(
-    160deg,
-    rgba(255, 41, 12, 0.5) 10%,
-    rgba(0, 0, 0, 0.7903536414565826) 80%
-  );
+      160deg,
+      rgba(255, 41, 12, 0.5) 10%,
+      rgba(0, 0, 0, 0.7903536414565826) 80%
+    );
   width: 100%;
   height: 100%;
   filter: brightness(1.5) contrast(1.6);
@@ -397,10 +397,11 @@ nav {
 
 .cover-gradient2 {
   background:
-    linear-gradient(180deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.9) 98%
-  );
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.9) 98%
+    );
   width: 100%;
   height: 100%;
   position: absolute;
@@ -431,8 +432,8 @@ nav {
 
 .news {
   font-family:
-  "Lato",
-  sans-serif;
+    "Lato",
+    sans-serif;
   font-weight: 900;
   margin: 0 auto;
   padding: 5rem 1rem 2rem;
@@ -463,6 +464,10 @@ nav {
   position: absolute;
 }
 
+.latest img {
+  width: 6rem;
+}
+
 .grid-news div img {
   width: 100%;
 }
@@ -479,6 +484,15 @@ nav {
   padding: 0 0.5rem;
 }
 
+.footer-links a {
+  font-family: "Rajdhani", sans-serif;
+  text-decoration: none;
+  color: rgb(163, 163, 163);
+  font-size: 0.92rem;
+  margin: 0 0.2rem;
+  font-weight: 600;
+}
+
 .grid-news div span a {
   font-size: 0.8rem;
   color: rgb(189, 189, 189);
@@ -489,8 +503,8 @@ nav {
 .funding {
   padding: 2rem 1rem;
   font-family:
-  "Lato",
-  sans-serif;
+    "Lato",
+    sans-serif;
   font-weight: 900;
 }
 
@@ -506,6 +520,12 @@ nav {
   font-size: 1.7rem;
   line-height: 2rem;
   color: rgb(255, 68, 34);
+}
+
+.deals-top h2 {
+  font-size: 1.9rem;
+  line-height: 2rem;
+  font-weight: 900;
 }
 
 .news h2:hover {
@@ -524,6 +544,11 @@ nav {
 
 .money span {
   line-height: 1.3rem;
+}
+
+.deals-top span {
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 
 .left-black span:hover,
@@ -556,6 +581,24 @@ nav {
 
 .funding-grid-item {
   position: relative;
+}
+
+.footer-copyright div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3rem;
+}
+
+.footer-icons a div {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #313131;
+  border-radius: 50%;
+  border: 2px solid #313131;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .funding-grid-item div:nth-child(2) {
@@ -595,6 +638,12 @@ nav {
   margin-top: 0.3rem;
 }
 
+.footer-icons a div i {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+}
+
 .funding-grid-item div:nth-child(4) span i {
   margin: 0 0.5rem;
   color: rgb(25, 25, 25);
@@ -610,8 +659,52 @@ nav {
   font-weight: 400;
 }
 
+.footer-copyright p {
+  color: #fc1717;
+}
+
+.img-box p:nth-child(2) {
+  top: 12rem;
+  left: 0.8rem;
+  font-size: 0.7rem;
+  font-weight: 200;
+}
+
+.img-box p:nth-child(3) {
+  top: 13rem;
+  left: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-right: 1rem;
+}
+
+.img-box p:last-child {
+  top: 16rem;
+  left: 0.8rem;
+  font-size: 0.8rem;
+  color: rgb(156, 156, 156);
+}
+
+.latest-left p:first-child {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.latest-left p:nth-child(2) {
+  font-size: 0.9rem;
+  font-weight: 800;
+  line-height: 1.1rem;
+}
+
 .funding-grid-item div:nth-child(5) p {
   line-height: 1.5rem;
+}
+
+.deals-grid-item div:nth-child(5) span {
+  text-decoration: line-through;
+  color: #777;
+  font-size: 0.85rem;
+  margin-right: 0.6rem;
 }
 
 .funding-grid-item div:nth-child(5) p span {
@@ -625,8 +718,8 @@ nav {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(23.625rem, 1fr));
   font-family:
-  "Lato",
-  sans-serif;
+    "Lato",
+    sans-serif;
   padding: 4rem 0 3rem;
 }
 
@@ -646,10 +739,11 @@ nav {
   position: absolute;
   background: rgb(0, 0, 0);
   background:
-    linear-gradient(0deg,
-    rgba(0, 0, 0, 1) 13%,
-    rgba(255, 249, 249, 0) 100%
-  );
+    linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 13%,
+      rgba(255, 249, 249, 0) 100%
+    );
 }
 
 .misc1 {
@@ -693,52 +787,15 @@ nav {
   background-position: center;
 }
 
-.img-box p:nth-child(2) {
-  top: 12rem;
-  left: 0.8rem;
-  font-size: 0.7rem;
-  font-weight: 200;
-}
-
-.img-box p:nth-child(3) {
-  top: 13rem;
-  left: 0.8rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-  padding-right: 1rem;
-}
-
-.img-box p:last-child {
-  top: 16rem;
-  left: 0.8rem;
-  font-size: 0.8rem;
-  color: rgb(156, 156, 156);
-}
-
 .latest {
   display: flex;
   background-color: #fff4f3;
   margin-top: 0.1rem;
 }
 
-.latest img {
-  width: 6rem;
-}
-
 .latest-left {
   color: rgb(255, 68, 34, 0.9);
   padding: 0.7rem;
-}
-
-.latest-left p:first-child {
-  font-size: 0.8rem;
-  margin-bottom: 0.5rem;
-}
-
-.latest-left p:nth-child(2) {
-  font-size: 0.9rem;
-  font-weight: 800;
-  line-height: 1.1rem;
 }
 
 .misc-topics {
@@ -772,8 +829,8 @@ nav {
 .deals {
   padding: 0 1rem;
   font-family:
-  "Lato",
-  sans-serif;
+    "Lato",
+    sans-serif;
   color: #111;
 }
 
@@ -797,20 +854,9 @@ nav {
   margin-bottom: 1.5rem;
 }
 
-.deals-top h2 {
-  font-size: 1.9rem;
-  line-height: 2rem;
-  font-weight: 900;
-}
-
 .deals-top h2:hover {
   cursor: pointer;
   color: black;
-}
-
-.deals-top span {
-  font-size: 1.2rem;
-  line-height: 2rem;
 }
 
 .deal1 {
@@ -862,13 +908,6 @@ nav {
   color: #333;
 }
 
-.deals-grid-item div:nth-child(5) span {
-  text-decoration: line-through;
-  color: #777;
-  font-size: 0.85rem;
-  margin-right: 0.6rem;
-}
-
 .yellow-flag {
   width: 0;
   height: 0;
@@ -912,25 +951,8 @@ footer {
   justify-content: space-between;
 }
 
-.footer-icons a div {
-  width: 2.5rem;
-  height: 2.5rem;
-  background-color: #313131;
-  border-radius: 50%;
-  border: 2px solid #313131;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .footer-icons a div:hover {
   background-color: transparent;
-}
-
-.footer-icons a div i {
-  display: inline-block;
-  width: 1rem;
-  height: 1rem;
 }
 
 .footer-icons a:first-child div i {
@@ -961,19 +983,10 @@ footer {
   background: url("assets/icons-sprite.png") -576px -576px;
 }
 
-.footer-links a {
-  font-family: "Rajdhani", sans-serif;
-  text-decoration: none;
-  color: rgb(163, 163, 163);
-  font-size: 0.92rem;
-  margin: 0 0.2rem;
-  font-weight: 600;
-}
-
 .footer-copyright {
   font-family:
-  "Lato",
-  sans-serif;
+    "Lato",
+    sans-serif;
   font-size: 0.8rem;
   background-color: black;
   height: 6.5rem;
@@ -981,17 +994,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.footer-copyright div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 3rem;
-}
-
-.footer-copyright p {
-  color: #fc1717;
 }
 
 .tnwicon {
