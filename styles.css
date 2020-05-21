@@ -1321,7 +1321,7 @@ footer {
   }
 
   .footer-icons {
-    width: 47vw;
+    width: 53vw;
   }
 
   .center {
@@ -1335,6 +1335,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 1rem;
+    width: 64vw
   }
 
   .footer-icons a div {
