@@ -138,6 +138,11 @@ button {
   background-color: transparent;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 main {
   max-width: 75rem;
   margin: 0 auto;
@@ -451,6 +456,10 @@ nav {
   gap: 1vw;
 }
 
+.grid-news h3:hover {
+  color: #f42;
+}
+
 .funding-grid-item img {
   position: absolute;
   left: 0.7rem;
@@ -464,8 +473,17 @@ nav {
   position: absolute;
 }
 
-.latest img {
-  width: 6rem;
+.misc-icon-div {
+  width: 9rem;
+  height: 6rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.misc-icon-div img {
+  transform: scale(0.15)
 }
 
 .grid-news div img {
@@ -583,6 +601,10 @@ nav {
   position: relative;
 }
 
+.funding-grid-item:hover {
+  cursor: pointer;
+}
+
 .footer-copyright div {
   display: flex;
   justify-content: center;
@@ -638,6 +660,10 @@ nav {
   margin-top: 0.3rem;
 }
 
+.funding-grid-item div:nth-child(4) span:hover {
+  color: black;
+}
+
 .footer-icons a div i {
   display: inline-block;
   width: 1rem;
@@ -664,18 +690,23 @@ nav {
 }
 
 .img-box p:nth-child(2) {
-  top: 12rem;
+  top: 60%;
   left: 0.8rem;
   font-size: 0.7rem;
   font-weight: 200;
 }
 
 .img-box p:nth-child(3) {
-  top: 13rem;
+  top: 65%;
   left: 0.8rem;
   font-size: 1.2rem;
   font-weight: 600;
   padding-right: 1rem;
+}
+
+.img-box p:nth-child(3):hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .img-box p:last-child {
@@ -694,6 +725,15 @@ nav {
   font-size: 0.9rem;
   font-weight: 800;
   line-height: 1.1rem;
+}
+
+.latest-left p:nth-child(2):hover,
+.misc-icon-div:hover {
+  cursor: pointer;
+}
+
+.no-decoration:hover {
+  color: #111;
 }
 
 .funding-grid-item div:nth-child(5) p {
@@ -791,11 +831,12 @@ nav {
   display: flex;
   background-color: #fff4f3;
   margin-top: 0.1rem;
-}
+ }
 
 .latest-left {
   color: rgb(255, 68, 34, 0.9);
   padding: 0.7rem;
+  width: 100%;
 }
 
 .misc-topics {
@@ -902,6 +943,12 @@ nav {
   margin: 0.6rem 0;
   font-weight: 900;
   line-height: 1.2rem;
+}
+
+.deals-title:hover {
+  color:#f42;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .deals-grid-item div:nth-child(5) {
@@ -1192,14 +1239,14 @@ footer {
   }
 
   .img-box p:nth-child(2) {
-    top: 80%;
+    top: 79%;
     left: 0.8rem;
     font-size: 0.7rem;
     font-weight: 400;
   }
 
   .img-box p:nth-child(3) {
-    top: 83%;
+    top: 82%;
     left: 0.8rem;
     font-size: 1.2rem;
     font-weight: 600;
