@@ -1192,14 +1192,14 @@ footer {
   }
 
   .img-box p:nth-child(2) {
-    top: 12rem;
+    top: 80%;
     left: 0.8rem;
     font-size: 0.7rem;
     font-weight: 400;
   }
 
   .img-box p:nth-child(3) {
-    top: 13rem;
+    top: 83%;
     left: 0.8rem;
     font-size: 1.2rem;
     font-weight: 600;
@@ -1207,7 +1207,7 @@ footer {
   }
 
   .img-box p:last-child {
-    top: 16rem;
+    top: 94%;
     left: 0.8rem;
     font-size: 0.8rem;
     color: rgb(156, 156, 156);
