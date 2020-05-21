@@ -121,10 +121,10 @@ q {
   quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
   content: "";
   content: none;
 }
@@ -146,7 +146,8 @@ main {
 
 @font-face {
   font-family: "Rajdhani";
-  src: url("fonts/Rajdhani.ttf.woff") format("woff"),
+  src: 
+    url("fonts/Rajdhani.ttf.woff") format("woff"),
     url("fonts/Rajdhani.ttf.svg#Rajdhani") format("svg"),
     url("fonts/Rajdhani.ttf.eot"),
     url("fonts/Rajdhani.ttf.eot?#iefix") format("embedded-opentype");
@@ -170,7 +171,8 @@ nav {
 .logo-gif {
   height: 4.7rem;
   width: 6.5rem;
-  background: linear-gradient(
+  background: 
+    linear-gradient(
     141deg,
     rgb(221, 0, 111) 0%,
     rgba(255, 100, 20, 1) 100%
@@ -252,16 +254,16 @@ nav {
 
 .right-white {
   width: 3rem;
-  text-align: center; 
+  text-align: center;
   border-left: 0.02rem solid rgb(235, 235, 235);
   float: left;
 }
 
 .right-menu {
   width: 3rem;
-  text-align: center; 
+  text-align: center;
   border-left: 0.02rem solid rgb(235, 235, 235);
-  float:right;
+  float: right;
   padding-top: 0.2rem; /* center */
   display: none;
 }
@@ -277,10 +279,10 @@ nav {
 }
 
 .yellow-nav {
-  font-family: 'Lato',sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 0.84rem;
   padding: 0.7% 0 0.7% 1%;
-  background-color: #ffdd33;
+  background-color: #fd3;
 }
 
 .yellow-nav a {
@@ -367,7 +369,7 @@ nav {
   font-size: 2.9rem;
   font-weight: 800;
   line-height: 3.5rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .bottom-side-cover h2,
@@ -379,7 +381,7 @@ nav {
   font-weight: 700;
   padding-left: 1rem;
   padding-right: 4rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .cover-gradient {
@@ -827,7 +829,6 @@ nav {
   background-repeat: no-repeat;
 }
 
-
 .deals-title {
   margin: 0.6rem 0;
   font-weight: 900;
@@ -849,7 +850,7 @@ nav {
   width: 0;
   height: 0;
   border: 4rem solid transparent;
-  border-bottom: 4rem solid #ffcc00;
+  border-bottom: 4rem solid #fc0;
   position: absolute;
   right: -4em;
   top: -4rem;
@@ -1020,7 +1021,7 @@ footer {
   .cover-gradient {
     display: none;
   }
-  
+
   .cover {
     filter: brightness(1);
   }
@@ -1104,7 +1105,7 @@ footer {
   .right-menu {
     display: block;
   }
-    
+
   .cover {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -1119,12 +1120,12 @@ footer {
   .cover-content h5 {
     display: none;
   }
-  
+
   .cover-content h2 {
     font-size: 1.2rem;
     line-height: 1.5rem;
   }
-  
+
   .bottom-side-cover h2,
   .top-side-cover h2 {
     font-size: 1.2rem;
@@ -1141,7 +1142,7 @@ footer {
     height: 5rem;
     overflow: hidden;
     float: left;
-    margin-right: .8rem;
+    margin-right: 0.8rem;
     position: relative;
   }
 
@@ -1150,9 +1151,9 @@ footer {
     position: absolute;
     left: -55%;
   }
-  
+
   .grid-news div h3 {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 
   .funding-grid {
@@ -1162,14 +1163,14 @@ footer {
   .img-box {
     height: 32rem;
   }
-  
+
   .img-box p:nth-child(2) {
     top: 12rem;
     left: 0.8rem;
     font-size: 0.7rem;
     font-weight: 400;
   }
-  
+
   .img-box p:nth-child(3) {
     top: 13rem;
     left: 0.8rem;
@@ -1177,14 +1178,14 @@ footer {
     font-weight: 600;
     padding-right: 1rem;
   }
-  
+
   .img-box p:last-child {
     top: 16rem;
     left: 0.8rem;
     font-size: 0.8rem;
     color: rgb(156, 156, 156);
   }
-  
+
   .deals-grid {
     grid-template-columns: 1fr;
     gap: 0;
@@ -1204,7 +1205,7 @@ footer {
   }
 
   .deals-title {
-    font-size: 0.9rem;  
+    font-size: 0.9rem;
   }
 
   .deals-title,
