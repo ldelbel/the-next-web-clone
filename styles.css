@@ -146,7 +146,7 @@ main {
 
 @font-face {
   font-family: "Rajdhani";
-  src: 
+  src:
     url("fonts/Rajdhani.ttf.woff") format("woff"),
     url("fonts/Rajdhani.ttf.svg#Rajdhani") format("svg"),
     url("fonts/Rajdhani.ttf.eot"),
@@ -171,7 +171,7 @@ nav {
 .logo-gif {
   height: 4.7rem;
   width: 6.5rem;
-  background: 
+  background:
     linear-gradient(
     141deg,
     rgb(221, 0, 111) 0%,
@@ -201,7 +201,9 @@ nav {
   padding: 0.6rem 1.5rem 0.5rem 1.3rem;
   color: rgb(139, 138, 138);
   background-color: #111;
-  font-family: "Lato", sans-serif;
+  font-family:
+  "Lato",
+  sans-serif;
 }
 
 .left-black {
@@ -213,18 +215,17 @@ nav {
   font-size: 0.8rem;
 }
 
-.left-black span:hover,
-.right-black span:hover {
-  cursor: pointer;
-  color: white;
+.left-white span {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "Rajdhani";
+  color: rgb(170, 170, 170);
+  font-weight: 600;
+  padding-top: 0.2rem; /* center */
 }
 
 .right-black {
   width: 12.5rem;
-}
-
-.left-black span:first-child {
-  color: white;
 }
 
 .white-nav {
@@ -236,20 +237,6 @@ nav {
 
 .left-white {
   width: 35rem;
-}
-
-.left-white span {
-  text-transform: uppercase;
-  font-size: 1rem;
-  font-family: "Rajdhani";
-  color: rgb(170, 170, 170);
-  font-weight: 600;
-  padding-top: 0.2rem; /* center */
-}
-
-.left-white span:hover {
-  cursor: pointer;
-  color: black;
 }
 
 .right-white {
@@ -279,7 +266,9 @@ nav {
 }
 
 .yellow-nav {
-  font-family: "Lato", sans-serif;
+  font-family:
+  "Lato",
+  sans-serif;
   font-size: 0.84rem;
   padding: 0.7% 0 0.7% 1%;
   background-color: #fd3;
@@ -298,8 +287,14 @@ nav {
   gap: 0.6rem;
   padding: 0.1rem 0.5rem 0;
   color: white;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family:
+  "Lucida Sans",
+  "Lucida Sans Regular",
+  "Lucida Grande",
+  "Lucida Sans Unicode",
+  Geneva,
+  Verdana,
+  sans-serif;
   filter: brightness(1.8);
 }
 
@@ -328,8 +323,8 @@ nav {
   position: relative;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    180deg,
+  background:
+    linear-gradient(180deg,
     rgba(0, 0, 0, 0.7) 0%,
     rgba(0, 0, 0, 1) 94%
   );
@@ -369,7 +364,9 @@ nav {
   font-size: 2.9rem;
   font-weight: 800;
   line-height: 3.5rem;
-  font-family: "Open Sans", sans-serif;
+  font-family:
+  "Open Sans",
+  sans-serif;
 }
 
 .bottom-side-cover h2,
@@ -381,11 +378,14 @@ nav {
   font-weight: 700;
   padding-left: 1rem;
   padding-right: 4rem;
-  font-family: "Open Sans", sans-serif;
+  font-family:
+  "Open Sans",
+  sans-serif;
 }
 
 .cover-gradient {
-  background: linear-gradient(
+  background:
+    linear-gradient(
     160deg,
     rgba(255, 41, 12, 0.5) 10%,
     rgba(0, 0, 0, 0.7903536414565826) 80%
@@ -396,8 +396,8 @@ nav {
 }
 
 .cover-gradient2 {
-  background: linear-gradient(
-    180deg,
+  background:
+    linear-gradient(180deg,
     rgba(0, 0, 0, 0) 0%,
     rgba(0, 0, 0, 0.9) 98%
   );
@@ -430,7 +430,9 @@ nav {
 /* ------------------------------------- NEWS SECTION ------------------------------------- */
 
 .news {
-  font-family: "Lato", sans-serif;
+  font-family:
+  "Lato",
+  sans-serif;
   font-weight: 900;
   margin: 0 auto;
   padding: 5rem 1rem 2rem;
@@ -442,15 +444,23 @@ nav {
   color: rgb(255, 68, 34);
 }
 
-.news h2:hover {
-  cursor: pointer;
-  color: black;
-}
-
 .grid-news {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(14.78125rem, 1fr));
   gap: 1vw;
+}
+
+.funding-grid-item img {
+  position: absolute;
+  left: 0.7rem;
+  top: 0.7rem;
+  width: 3.8rem;
+  height: 3.8rem;
+}
+
+.img-box img,
+.img-box p {
+  position: absolute;
 }
 
 .grid-news div img {
@@ -462,6 +472,13 @@ nav {
   padding: 0.4rem 0;
 }
 
+.funding-title a {
+  color: rgb(255, 68, 34);
+  font-weight: 400;
+  text-decoration: none;
+  padding: 0 0.5rem;
+}
+
 .grid-news div span a {
   font-size: 0.8rem;
   color: rgb(189, 189, 189);
@@ -471,7 +488,9 @@ nav {
 
 .funding {
   padding: 2rem 1rem;
-  font-family: "Lato", sans-serif;
+  font-family:
+  "Lato",
+  sans-serif;
   font-weight: 900;
 }
 
@@ -479,6 +498,19 @@ nav {
   font-size: 1.7rem;
   line-height: 2rem;
   color: rgb(255, 68, 34);
+}
+
+.misc-item h2 {
+  font-weight: 900;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  color: rgb(255, 68, 34);
+}
+
+.news h2:hover {
+  cursor: pointer;
+  color: black;
 }
 
 .funding h2:hover {
@@ -490,17 +522,29 @@ nav {
   line-height: 2rem;
 }
 
+.money span {
+  line-height: 1.3rem;
+}
+
+.left-black span:hover,
+.right-black span:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.left-black span:first-child {
+  color: white;
+}
+
+.left-white span:hover {
+  cursor: pointer;
+  color: black;
+}
+
 .funding-title {
   display: flex;
   justify-content: space-between;
   color: rgb(255, 68, 34);
-}
-
-.funding-title a {
-  color: rgb(255, 68, 34);
-  font-weight: 400;
-  text-decoration: none;
-  padding: 0 0.5rem;
 }
 
 .funding-grid {
@@ -512,14 +556,6 @@ nav {
 
 .funding-grid-item {
   position: relative;
-}
-
-.funding-grid-item img {
-  position: absolute;
-  left: 0.7rem;
-  top: 0.7rem;
-  width: 3.8rem;
-  height: 3.8rem;
 }
 
 .funding-grid-item div:nth-child(2) {
@@ -536,10 +572,6 @@ nav {
   justify-content: space-between;
   padding: 0.7rem 1rem 0.7rem 5.4rem;
   background-color: rgb(255, 235, 231);
-}
-
-.money span {
-  line-height: 1.3rem;
 }
 
 .money span:nth-child(2) {
@@ -592,21 +624,15 @@ nav {
 .misc {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(23.625rem, 1fr));
-  font-family: "Lato", sans-serif;
+  font-family:
+  "Lato",
+  sans-serif;
   padding: 4rem 0 3rem;
 }
 
 .misc-item {
   padding: 1rem;
   margin-bottom: 1.5rem;
-}
-
-.misc-item h2 {
-  font-weight: 900;
-  margin-bottom: 1rem;
-  font-size: 1.7rem;
-  line-height: 2rem;
-  color: rgb(255, 68, 34);
 }
 
 .misc-item h2:hover {
@@ -619,8 +645,8 @@ nav {
   height: 100%;
   position: absolute;
   background: rgb(0, 0, 0);
-  background: linear-gradient(
-    0deg,
+  background:
+    linear-gradient(0deg,
     rgba(0, 0, 0, 1) 13%,
     rgba(255, 249, 249, 0) 100%
   );
@@ -665,11 +691,6 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-.img-box img,
-.img-box p {
-  position: absolute;
 }
 
 .img-box p:nth-child(2) {
@@ -750,7 +771,9 @@ nav {
 
 .deals {
   padding: 0 1rem;
-  font-family: "Lato", sans-serif;
+  font-family:
+  "Lato",
+  sans-serif;
   color: #111;
 }
 
@@ -939,7 +962,7 @@ footer {
 }
 
 .footer-links a {
-  font-family: "Rajdhani";
+  font-family: "Rajdhani", sans-serif;
   text-decoration: none;
   color: rgb(163, 163, 163);
   font-size: 0.92rem;
@@ -948,7 +971,9 @@ footer {
 }
 
 .footer-copyright {
-  font-family: "Lato", sans-serif;
+  font-family:
+  "Lato",
+  sans-serif;
   font-size: 0.8rem;
   background-color: black;
   height: 6.5rem;
