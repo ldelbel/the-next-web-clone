@@ -173,7 +173,7 @@ nav {
 }
 
 .logo-gif {
-  height: 4.7rem;
+  height: 4.75rem;
   width: 6.5rem;
   background:
     linear-gradient(
@@ -1183,7 +1183,7 @@ footer {
   }
 
   .logo-gif {
-    height: 2.8rem;
+    height: 2.9rem;
     transition: all 0.4s;
   }
 
