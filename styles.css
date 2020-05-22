@@ -268,13 +268,13 @@ nav {
   cursor: pointer;
 }
 
-.fa-bars:hover {
-  cursor: pointer;
-}
-
 .fa-bars {
   color: #f42;
   font-size: 1.3rem;
+}
+
+.fa-bars:hover {
+  cursor: pointer;
 }
 
 .yellow-nav {
@@ -464,6 +464,11 @@ nav {
   gap: 1vw;
 }
 
+.grid-news div h3 {
+  font-weight: 900;
+  padding: 0.4rem 0;
+}
+
 .grid-news h3:hover {
   color: #f42;
 }
@@ -491,16 +496,11 @@ nav {
 }
 
 .misc-icon-div img {
-  transform: scale(0.15)
+  transform: scale(0.15);
 }
 
 .grid-news div img {
   width: 100%;
-}
-
-.grid-news div h3 {
-  font-weight: 900;
-  padding: 0.4rem 0;
 }
 
 .funding-title a {
@@ -519,13 +519,19 @@ nav {
   font-weight: 600;
 }
 
-.footer-links a:hover {
-  color: white;
-}
-
 .grid-news div span a {
   font-size: 0.8rem;
   color: rgb(189, 189, 189);
+}
+
+.misc-topics ul li a {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  color: rgb(107, 107, 107);
+}
+
+.footer-links a:hover {
+  color: white;
 }
 
 /* ------------------------ FUNDING SECTION ----------------------------- */
@@ -581,6 +587,14 @@ nav {
   line-height: 2rem;
 }
 
+.footer-copyright span {
+  height: 1rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  margin-right: 0.4rem;
+}
+
 .left-black span:hover,
 .right-black span:hover {
   cursor: pointer;
@@ -615,13 +629,6 @@ nav {
 
 .funding-grid-item:hover {
   cursor: pointer;
-}
-
-.footer-copyright div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 3rem;
 }
 
 .footer-icons a div {
@@ -672,6 +679,18 @@ nav {
   margin-top: 0.3rem;
 }
 
+.deals-grid-item div:nth-child(5) span {
+  text-decoration: line-through;
+  color: #777;
+  font-size: 0.85rem;
+  margin-right: 0.6rem;
+}
+
+.funding-grid-item div:nth-child(5) p span {
+  line-height: 1rem;
+  color: #888;
+}
+
 .funding-grid-item div:nth-child(4) span:hover {
   color: black;
 }
@@ -716,11 +735,6 @@ nav {
   padding-right: 1rem;
 }
 
-.img-box p:nth-child(3):hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
 .img-box p:last-child {
   top: 16rem;
   left: 0.8rem;
@@ -739,6 +753,15 @@ nav {
   line-height: 1.1rem;
 }
 
+.funding-grid-item div:nth-child(5) p {
+  line-height: 1.5rem;
+}
+
+.img-box p:nth-child(3):hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .latest-left p:nth-child(2):hover,
 .misc-icon-div:hover {
   cursor: pointer;
@@ -746,22 +769,6 @@ nav {
 
 .no-decoration:hover {
   color: #111;
-}
-
-.funding-grid-item div:nth-child(5) p {
-  line-height: 1.5rem;
-}
-
-.deals-grid-item div:nth-child(5) span {
-  text-decoration: line-through;
-  color: #777;
-  font-size: 0.85rem;
-  margin-right: 0.6rem;
-}
-
-.funding-grid-item div:nth-child(5) p span {
-  line-height: 1rem;
-  color: #888;
 }
 
 /* ------------------------------ MISC SECTION --------------------------------  */
@@ -843,7 +850,7 @@ nav {
   display: flex;
   background-color: #fff4f3;
   margin-top: 0.1rem;
- }
+}
 
 .latest-left {
   color: rgb(255, 68, 34, 0.9);
@@ -869,12 +876,6 @@ nav {
   padding-bottom: 2rem;
   margin-left: -1rem;
   border-bottom: 0.05rem solid rgb(161, 161, 161, 0.5);
-}
-
-.misc-topics ul li a {
-  font-size: 0.8rem;
-  line-height: 1.2rem;
-  color: rgb(107, 107, 107);
 }
 
 /* ---------------------------- DEALS SECTION ---------------------------- */
@@ -958,9 +959,16 @@ nav {
 }
 
 .deals-title:hover {
-  color:#f42;
+  color: #f42;
   cursor: pointer;
   text-decoration: underline;
+}
+
+.footer-copyright div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3rem;
 }
 
 .deals-grid-item div:nth-child(5) {
@@ -1053,15 +1061,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.footer-copyright span {
-  height: 1rem;
-  line-height: 1rem;
-  display: flex;
-  align-items: center;
-  margin-right: 0.4rem;
-
 }
 
 .tnwicon {
@@ -1327,7 +1326,6 @@ footer {
   .center {
     padding-left: 30%;
   }
-  
 }
 
 @media only screen and (max-width: 576px) {
@@ -1335,7 +1333,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 1rem;
-    width: 64vw
+    width: 64vw;
   }
 
   .footer-icons a div {
