@@ -631,6 +631,13 @@ nav {
   cursor: pointer;
 }
 
+.footer-copyright div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3rem;
+}
+
 .footer-icons a div {
   width: 2.5rem;
   height: 2.5rem;
@@ -962,13 +969,6 @@ nav {
   color: #f42;
   cursor: pointer;
   text-decoration: underline;
-}
-
-.footer-copyright div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 3rem;
 }
 
 .deals-grid-item div:nth-child(5) {
