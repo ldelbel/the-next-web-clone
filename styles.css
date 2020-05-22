@@ -1304,6 +1304,11 @@ footer {
     font-size: 0.9rem;
   }
 
+  .footer-copyright div {
+    flex-direction: column;
+    padding-left: 0;
+  }
+
   .deals-title,
   .deals-grid-item div:nth-child(5) {
     margin-left: 6rem;
@@ -1312,11 +1317,6 @@ footer {
   .yellow-flag,
   .promo {
     display: none;
-  }
-
-  .footer-copyright div {
-    flex-direction: column;
-    padding-left: 0;
   }
 
   .footer-icons {
